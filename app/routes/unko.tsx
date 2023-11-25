@@ -7,11 +7,11 @@ export const meta: MetaFunction = () => {
   return [{ title: 'New Unko' }, { name: 'description', content: 'Welcome to Remix!' }]
 }
 export async function loader({ request, context }: LoaderFunctionArgs) {
-  return json({ unko: 'unko' ,wanko:'wanko'})
+  return json({ unko: 'unko', wanko: 'wanko' })
 }
 
 export default function Index() {
-  const  user  = useLoaderData<typeof loader>()
+  const user = useLoaderData<typeof loader>()
   return (
     <div>
       <h1>Unko</h1>
