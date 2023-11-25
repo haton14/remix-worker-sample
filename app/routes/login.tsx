@@ -1,4 +1,4 @@
-import { Form } from '@remix-run/react'
+import { Form, Link } from '@remix-run/react'
 
 export default function Login() {
   return (
@@ -7,6 +7,9 @@ export default function Login() {
       <Form action="/auth/google" method="post">
         <button type="button">Continue with Google</button>
       </Form>
+      <p>
+        Don't have an account? <Link to="/signup">Sign up</Link>
+      </p>
     </div>
   )
 }
