@@ -1,6 +1,6 @@
 import { Form } from '@remix-run/react'
 
-export default function Login() {
+export default function Signup() {
   return (
     <div>
       <p>Create your account</p>
